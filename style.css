@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    width: 50%;
+    color: white;
+    border-radius: 16px;
+    border: 2px solid white;
+    height: 50px;
+    background-color: blue;
+    font-size: 24px;
+    margin: 15px;
+    transition: transform .1s ease-in-out;
+}
+button:hover{
+    transform: scale(1.05);
+}
+
+#container{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 2px;
+}
+
+.box{
+    width: 10%;
+    height: 100px;
+    background-color: rgb(34, 33, 33);
+    border: 3px solid rgb(139, 138, 138);
+    color: rgb(218, 24, 24);
+    transition: transform .1s ease-in-out;
+    transition: background-color 1s 2s;
+    transition: border-color 1s 2s;
+    border-radius: 4px;
+}
+.box:hover{
+    background-color: rgb(6, 73, 173);
+    transform: scale(1.1);
+    border-color: white;
+    
+}
+
+#container{
+    display: flex;
+
+}

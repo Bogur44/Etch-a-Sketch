@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etchy-A-Sketchy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button onclick = 'popup()' class="button" >Want to change the grid?</button>
+    
+    <div id="container"></div>
+
+<script>
+    const bod = document.querySelector('body')
+    const container = document.querySelector('#container')
+    const button = document.querySelector('.button')
+
+
+    function popup(){
+        var input = prompt('What number of boxes do you want?')
+        createGrid(input)
+        console.log(input)
+    }
+
+    function removeStuff(){
+        box.removeElement('div')
+    }
+
+    function createGrid(input){
+        if(input >= 4 && input <= 100){
+            for(let i = 1; i <= input; i++){
+                const box = document.createElement('div')
+                box.classList.add('box')
+                container.appendChild(box)
+            }
+        }
+        else if(input > 100){
+            for(let i = 1; i <= 100; i++){
+                const box = document.createElement('div')
+                box.textContent = ('fvetv')
+                box.classList.add('box')
+                container.appendChild(box)
+            }
+            alert('100 is all I can do')
+        }
+        else if(input < 4){
+            for(let i = 1; i <= 4; i++){
+                const box = document.createElement('div')
+                box.classList.add('box')
+                container.appendChild(box)
+            }
+            alert('Come on man at least 4')
+        }
+    }
+
+</script>
+</body>
+
+</html>
